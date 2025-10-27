@@ -1,0 +1,30 @@
+# How to Run the GenAI Course Demo App
+
+## 1. Install Python (if not already installed)
+- Recommended: Python 3.9 or newer
+
+## 2. Set up a virtual environment (optional but recommended)
+cd /path/to/genAI_course
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+## 3. Install dependencies
+pip install -r requirements.txt
+
+## 4. Set up environment variables
+- In the `.env` file:
+GEMINI_API_KEY=<your_api_key_here>
+LLM_MODEL=<your_model_name_here>
+
+## 5. Run the app
+streamlit run Home.py
+
+- The app will open in your browser. Use the sidebar to navigate between pages.
+
+## 6. Usage Tips
+- Start with the **Data Generation** tab to upload your DDL and generate data.
+- Use the **Talk to Your Data** tab to chat with your data (requires both DDL and CSVs).
+- See the Home page for full instructions and troubleshooting tips.
+
+## 7. Stopping the app
+- Press `Ctrl+C` in the terminal to stop the Streamlit server.
